@@ -45,10 +45,7 @@ const router = createBrowserRouter(
       <Route path='User/:userid' element={<User/>}></Route>
       <Route loader={GithubInfoLoader} path='Github' element={<Github/>}></Route>
     </Route>,
-     {
-    basename: "/React-router"  
-  }
-    
+  
   )
 )
 
@@ -56,5 +53,5 @@ const router = createBrowserRouter(
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <RouterProvider router={router}/>
-  </StrictMode>,
+  </StrictMode>
 )

@@ -3,13 +3,13 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://sahil8629.github.io/React-router/",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "predeploy": "npm run build && cp dist/index.html dist/404.html",
+    
     "deploy": "gh-pages -d dist"
   },
   "dependencies": {
