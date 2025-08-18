@@ -44,7 +44,10 @@ const router = createBrowserRouter(
       <Route path='Contact' element={<Contact/>}></Route>
       <Route path='User/:userid' element={<User/>}></Route>
       <Route loader={GithubInfoLoader} path='Github' element={<Github/>}></Route>
-    </Route>
+    </Route>,
+     {
+    basename: "/React-router"  
+  }
     
   )
 )
